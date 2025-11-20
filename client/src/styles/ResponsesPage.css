@@ -1,0 +1,62 @@
+.responses-page-container { max-width: 770px; margin: 0 auto; }
+.responses-header { padding: 16px 0; margin-bottom: 16px; }
+.form-main-title { font-size: 28px; font-weight: 400; color: #202124; }
+
+.response-nav-header {
+  background-color: white; border: 1px solid #dadce0; border-radius: 8px 8px 0 0;
+  padding: 8px 16px; display: flex; align-items: center; justify-content: center; position: relative;
+}
+.response-count-text { font-size: 14px; color: #3c4043; margin: 0 32px; }
+.nav-arrow-btn {
+  background-color: transparent; border: none; width: 36px; height: 36px;
+  border-radius: 50%; cursor: pointer; font-size: 24px; color: #5f6368;
+  display: flex; align-items: center; justify-content: center; transition: background-color 0.2s;
+}
+.nav-arrow-btn:hover:not(:disabled) { background-color: #f1f3f4; }
+.nav-arrow-btn:disabled { color: #bdc1c6; cursor: not-allowed; }
+
+.response-content-card {
+  background-color: white; border: 1px solid #dadce0; border-top: none;
+  border-radius: 0 0 8px 8px; padding: 0; 
+}
+
+.score-header {
+  padding: 16px 24px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dadce0;
+  font-size: 16px;
+  color: #202124;
+}
+
+.answer-block {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f3f4;
+  transition: border-left-color 0.3s;
+  border-left: 4px solid transparent;
+}
+.answer-block:last-child { border-bottom: none; }
+
+.question-text-response { font-size: 16px; color: #202124; margin: 0 0 12px 0; }
+.answer-text-response {
+  font-size: 14px; color: #3c4043;
+  display: inline-block; line-height: 1.5;
+}
+
+.answer-block.correct { border-left-color: #34a853;  }
+.answer-block.incorrect { border-left-color: #d93025;  }
+
+.correct-answer-hint {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dotted #dadce0;
+  font-size: 14px;
+}
+.correct-answer-hint strong { color: #1e8e3e; } 
+.correct-answer-hint span { color: #3c4043; }
+
+.empty-state-card {
+  background-color: white; border: 1px dashed #dadce0; border-radius: 8px;
+  padding: 60px 24px; text-align: center;
+}
+.empty-state-card h2 { font-size: 18px; font-weight: 500; color: #202124; margin-bottom: 8px; }
+.empty-state-card p { font-size: 14px; color: #5f6368; }

@@ -1,0 +1,43 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "^4.0.9",
+    "@reduxjs/toolkit": "^2.10.1",
+    "@rtk-query/graphql-request-base-query": "^2.3.2",
+    "graphql": "^16.12.0",
+    "graphql-request": "^7.3.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@graphql-codegen/cli": "^6.0.2",
+    "@graphql-codegen/typescript": "^5.0.4",
+    "@graphql-codegen/typescript-operations": "^5.0.4",
+    "@graphql-codegen/typescript-rtk-query": "^3.1.2",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.2.2"
+  }
+}

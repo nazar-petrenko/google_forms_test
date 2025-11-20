@@ -1,0 +1,70 @@
+.fill-form-container { max-width: 770px; margin: 30px auto; font-family: 'Roboto', sans-serif; }
+.loader, .error-page { text-align: center; padding: 40px; font-size: 18px; color: #5f6368; }
+
+.form-header {
+  background: white; border-radius: 8px; border-top: 10px solid #673ab7;
+  padding: 24px; margin-bottom: 12px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.form-title { font-size: 32px; line-height: 40px; margin: 0 0 12px 0; }
+.form-description { font-size: 16px; color: #3c4043; margin: 0; }
+.required-notice { margin-top: 24px; font-size: 12px; color: #d93025; }
+
+.fill-form-body { display: flex; flex-direction: column; gap: 12px; }
+
+.question-block {
+  background: white; border-radius: 8px; padding: 24px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-left: 4px solid transparent; transition: border-left-color 0.2s;
+}
+
+.block-error { border-left-color: #d93025; }
+.error-message { color: #d93025; font-size: 12px; margin-top: 8px; }
+
+.question-text { font-size: 16px; font-weight: 400; color: #202124; display: block; margin-bottom: 16px; }
+.required-star { color: #d93025; font-weight: 700; margin-left: 2px; }
+
+.text-input, .date-input { width: 50%; border: none; border-bottom: 1px solid #e0e0e0; padding: 8px 0; outline: none; font-size: 14px; transition: border-bottom-color 0.2s ease; }
+.text-input:focus, .date-input:focus { border-bottom: 2px solid #673ab7; }
+
+.choice-option { display: block; position: relative; padding: 8px 8px 8px 40px; margin-bottom: 8px; cursor: pointer; font-size: 14px; user-select: none; border-radius: 4px; transition: background-color 0.2s; }
+.choice-option:hover { background-color: #f1f3f4; }
+.choice-option input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+
+.checkmark { position: absolute; top: 50%; left: 8px; transform: translateY(-50%); height: 20px; width: 20px; background-color: #fff; border: 2px solid #5f6368; transition: all 0.2s; }
+.choice-option input[type="radio"] ~ .checkmark { border-radius: 50%; }
+.choice-option input[type="checkbox"] ~ .checkmark { border-radius: 4px; }
+
+.choice-option input:checked ~ .checkmark { background-color: #673ab7; border-color: #673ab7; }
+.checkmark:after { content: ""; position: absolute; display: none; }
+.choice-option input:checked ~ .checkmark:after { display: block; }
+.choice-option input[type="radio"]:checked ~ .checkmark:after { top: 4px; left: 4px; width: 8px; height: 8px; border-radius: 50%; background: white; }
+.choice-option input[type="checkbox"]:checked ~ .checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; transform: rotate(45deg); }
+
+.submit-form-btn { align-self: flex-start; background: #673ab7; border: none; color: white; padding: 10px 24px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 500; margin-top: 20px; }
+.submit-form-btn:hover { background: #5e35b1; }
+.submit-form-btn:disabled { background-color: #d1c4e9; cursor: not-allowed; }
+
+.results-card {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.results-card h2 { font-size: 24px; font-weight: 400; color: #202124; margin-bottom: 16px; }
+.score-text { font-size: 18px; color: #3c4043; margin-bottom: 24px; }
+.back-to-home-btn { background: #1a73e8; color: white; padding: 10px 24px; border-radius: 4px; text-decoration: none; font-weight: 500; }
+.back-to-home-btn:hover { background: #1669d6; }
+.choice-option .checkmark.radio {
+  border-radius: 50%;
+}
+.choice-option input:checked ~ .checkmark.radio:after {
+  display: block;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
